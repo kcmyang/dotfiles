@@ -1,0 +1,73 @@
+# Marco's yabairc
+
+# Big Sur: manually load scripting addition
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+## Config
+
+# Use tiling layout
+yabai -m config layout bsp
+
+# Spawn new windows to right or bottom
+yabai -m config window_placement second_child
+
+# Padding and gaps
+# yabai -m config external_bar   all:22:0
+yabai -m config top_padding    15
+yabai -m config bottom_padding 15
+yabai -m config left_padding   15
+yabai -m config right_padding  15
+yabai -m config window_gap     15
+
+# Shadows
+yabai -m config window_shadow off
+
+# Window opacity
+yabai -m config window_opacity off
+yabai -m config window_opacity_duration 0.0
+yabai -m config normal_window_opacity 1.0
+
+# Window border
+yabai -m config window_border off
+yabai -m config window_border_width 8
+yabai -m config active_window_border_color 0xffff6188
+yabai -m config normal_window_border_color 0xff222222
+
+# Auto-balance windows
+yabai -m config auto_balance on
+
+# Mouse support
+yabai -m config mouse_modifier alt
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+yabai -m config focus_follows_mouse autofocus
+yabai -m config mouse_follows_focus off
+
+# Raise floating windows - bad behaviour if on
+yabai -m config window_topmost off
+
+## Rules
+
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Information$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^QMK Toolbox$" manage=off
+yabai -m rule --add app="^Installer$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
+yabai -m rule --add app="^Logi Options$" manage=off
+yabai -m rule --add app="^Chrome$" title="Sign In" manage=off
+yabai -m rule --add app="^Brave Browser$" title="Sign In" manage=off
+yabai -m rule --add app="^Preview$" manage=on
+yabai -m rule --add app="^Steam$" manage=on
+yabai -m rule --add app="^GIMP.*$" manage=off
+yabai -m rule --add app="^VLC$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+
+## Signals
+
+yabai -m signal --add event=space_changed action="hs -c 'YabaiBar:update()'"
+yabai -m signal --add event=display_changed action="hs -c 'YabaiBar:update()'"
+yabai -m signal --add event=application_front_switched action="hs -c 'YabaiBar:update()'"
+

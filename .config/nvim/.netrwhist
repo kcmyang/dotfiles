@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/marco/spicetify_data/Themes/Dribbblish'
+let g:netrw_dirhist_9='/Users/marco/.local/share/nvim/plugged/vim-monokai-tastier'
+let g:netrw_dirhist_8='/Users/marco/.local/share/nvim/plugged/vim-monokai-tastier/colors'
+let g:netrw_dirhist_7='/Users/marco/.local/share/nvim/plugged/vim-monokai-tastier'
+let g:netrw_dirhist_6='/Users/marco/.local/share/nvim/plugged/vim-monokai-tastier/autoload'
+let g:netrw_dirhist_5='/Users/marco/.local/share/nvim/plugged/vim-monokai-tastier/autoload/airline'
+let g:netrw_dirhist_4='/Users/marco/.local/share/nvim/plugged/vim-monokai-tastier/autoload/airline/themes'
+let g:netrw_dirhist_3='/Users/marco/.oh-my-zsh/themes'
+let g:netrw_dirhist_2='/Users/marco/.oh-my-zsh'
+let g:netrw_dirhist_1='/Users/marco/.oh-my-zsh/themes'

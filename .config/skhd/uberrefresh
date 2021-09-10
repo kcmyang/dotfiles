@@ -1,0 +1,5 @@
+#!/bin/bash
+
+osascript -e 'tell application "Übersicht" to refresh widget id "bar-spaces_1-jsx"'
+osascript -e 'tell application "Übersicht" to refresh widget id "bar-spaces_2-jsx"'
+
