@@ -19,8 +19,6 @@ alias vi="vim"
 alias r="source ranger"
 alias rr="ranger"
 alias code="open -a Visual\ Studio\ Code"
-alias python="python3"
-alias pip="pip3"
 
 # git
 alias glom='git pull origin $(git_main_branch)'
