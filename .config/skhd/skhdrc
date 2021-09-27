@@ -125,8 +125,8 @@ resize < f     : yabai -m window --ratio abs:0.6
 # Toggle float
 shift + alt - f : yabai -m window --toggle float
 
-# Toggle border
-#shift + alt - j : yabai -m window --toggle border
+# Toggle sticky
+shift + alt - j : yabai -m window --toggle sticky
 
 # Toggle gaps/padding
 shift + alt - g : yabai -m space --toggle gap;    \
