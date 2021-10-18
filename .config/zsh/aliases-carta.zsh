@@ -18,10 +18,10 @@ alias r="source ranger"
 alias rr="ranger"
 alias code="open -a Visual\ Studio\ Code"
 alias python="python3"
-alias pip="pip3"
 
 # git
 alias glom='git pull origin $(git_main_branch)'
 gnew () {
   git checkout -b "${1}" && git push -u origin $(current_branch)
 }
+alias gcoi='git checkout-interactive'
