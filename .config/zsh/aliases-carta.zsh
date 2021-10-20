@@ -25,3 +25,6 @@ gnew () {
   git checkout -b "${1}" && git push -u origin $(current_branch)
 }
 alias gcoi='git checkout-interactive'
+
+# docker
+alias dc='docker-compose'
