@@ -25,3 +25,4 @@ alias glom='git pull origin $(git_main_branch)'
 gnew () {
   git checkout -b "${1}" && git push -u origin $(current_branch)
 }
+alias gcoi='git checkout-interactive'
