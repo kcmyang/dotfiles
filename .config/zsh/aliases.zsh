@@ -22,7 +22,9 @@ alias code="open -a Visual\ Studio\ Code"
 
 # git
 alias glom='git pull origin $(git_main_branch)'
+alias gprom='git pull --rebase origin $(git_main_branch)'
+alias gupom='git pull --rebase origin $(git_main_branch)'
+alias gcoi='git checkout-interactive'
 gnew () {
   git checkout -b "${1}" && git push -u origin $(current_branch)
 }
-alias gcoi='git checkout-interactive'

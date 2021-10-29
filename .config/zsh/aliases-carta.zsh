@@ -21,10 +21,12 @@ alias python="python3"
 
 # git
 alias glom='git pull origin $(git_main_branch)'
+alias gprom='git pull --rebase origin $(git_main_branch)'
+alias gupom='git pull --rebase origin $(git_main_branch)'
+alias gcoi='git checkout-interactive'
 gnew () {
   git checkout -b "${1}" && git push -u origin $(current_branch)
 }
-alias gcoi='git checkout-interactive'
 
 # docker
 alias dc='docker-compose'
