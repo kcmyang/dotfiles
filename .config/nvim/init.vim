@@ -97,7 +97,7 @@ let g:airline_powerline_fonts = 1
 set noshowmode
 
 " Column width indicator
-set colorcolumn=80
+set colorcolumn=80,100
 
 " Line numbering
 set cursorline

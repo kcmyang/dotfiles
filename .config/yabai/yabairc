@@ -67,6 +67,7 @@ yabai -m rule --add app="^Docker Desktop$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off sticky=on
 yabai -m rule --add app="^1Password$" manage=off sticky=on
 yabai -m rule --add app="^Banyan$" manage=off sticky=on
+yabai -m rule --add app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 
 ## Signals
 
