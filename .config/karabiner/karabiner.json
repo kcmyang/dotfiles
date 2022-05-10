@@ -408,9 +408,7 @@
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "vertical_wheel": 32
-                                        }
+                                        "key_code": "d"
                                     }
                                 ],
                                 "type": "basic"
@@ -717,9 +715,7 @@
                                 },
                                 "to": [
                                     {
-                                        "mouse_key": {
-                                            "vertical_wheel": -32
-                                        }
+                                        "key_code": "left_control"
                                     }
                                 ],
                                 "type": "basic"
@@ -1191,6 +1187,16 @@
                         },
                         {
                             "from": {
+                                "key_code": "caps_lock"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f19"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
                                 "key_code": "close_bracket"
                             },
                             "to": [
@@ -1506,16 +1512,6 @@
                             "to": [
                                 {
                                     "key_code": "x"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "caps_lock"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "f19"
                                 }
                             ]
                         }

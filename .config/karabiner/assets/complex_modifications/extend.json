@@ -388,9 +388,7 @@
           },
           "to": [
             {
-              "mouse_key": {
-                "vertical_wheel": 32
-              }
+              "key_code": "d"
             }
           ],
           "conditions": [
@@ -697,9 +695,7 @@
           },
           "to": [
             {
-              "mouse_key": {
-                "vertical_wheel": -32
-              }
+              "key_code": "left_control"
             }
           ],
           "conditions": [
