@@ -380,10 +380,10 @@
       where=${(V)VCS_STATUS_TAG}
     fi
 
-    # If local branch name or tag is at most 32 characters long, show it in full.
-    # Otherwise show the first 12 … the last 12.
+    # If local branch name or tag is at most 64 characters long, show it in full.
+    # Otherwise show the first 16 … the last 16.
     # Tip: To always show local branch name in full without truncation, delete the next line.
-    (( $#where > 32 )) && where[13,-13]="…"
+    (( $#where > 64 )) && where[17,-17]="…"
     res+="${clean}${where//\%/%%}"  # escape %
 
     # Display the current Git commit if there is no branch or tag.

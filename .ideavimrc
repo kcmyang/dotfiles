@@ -1,0 +1,23 @@
+" Base settings
+set scrolloff=5
+set smartcase
+set hlsearch
+set clipboard+=unnamed
+
+" Remaps
+let mapleader = " "
+nnoremap <silent> <CR> :nohlsearch<CR><CR>
+nnoremap Y y$
+
+" Plugins
+set sneak
+
+set highlightedyank
+let g:highlightedyank_highlight_duration = 200
+let g:highlightedyank_highlight_color = "rgba(250, 240, 170, 0.5)"
+
+set surround
+
+set easymotion
+set notimeout
+let g:EasyMotion_keys = "yeoipfjk,thsardcwgbvqz'nlu"

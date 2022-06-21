@@ -2,11 +2,14 @@ filetype on
 set tabstop=2
 set shiftwidth=0
 set expandtab
+set clipboard+=unnamed
 
 " Makefile settings
 autocmd Filetype make setlocal noexpandtab
 
 " Remaps
+let mapleader = " "
+
 nnoremap <silent> <CR> :nohlsearch<CR><CR>
 nnoremap <C-a> ggVG
 nnoremap Y y$
