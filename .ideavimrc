@@ -4,6 +4,7 @@ set smartcase
 set hlsearch
 set clipboard+=unnamed
 set keymodel^=startsel
+set ideajoin
 
 " Remaps
 let mapleader = " "
