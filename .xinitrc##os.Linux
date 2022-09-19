@@ -1,0 +1,4 @@
+xset +fp /home/marco/.local/share/fonts
+xset fp rehash
+
+xinput set-prop "Logitech MX Ergo Multi-Device Trackball " 'libinput Scroll Method Enabled' 0 0 1
