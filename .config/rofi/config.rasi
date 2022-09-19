@@ -1,0 +1,5 @@
+configuration {
+	modi: "drun,window";
+	font: "Iosevka Custom 14";
+}
+@import "/usr/share/rofi/themes/Paper.rasi"
