@@ -25,7 +25,7 @@ client.unfocused        #222222 #222222 #aaaaaa #222222   #222222
 client.focused_inactive #222222 #222222 #a9a9a9 #222222   #222222
 
 # Background image
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/macos-10-12.jpg
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/hatsune-miku-1.jpg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -187,16 +187,19 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left resize shrink width 10 px or 10 ppt
-        bindsym $up resize grow height 10 px or 10 ppt
-        bindsym $down resize shrink height 10 px or 10 ppt
-        bindsym $right resize grow width 10 px or 10 ppt
+        bindsym $left resize shrink width 2 px or 2 ppt
+        bindsym $up resize grow height 2 px or 2 ppt
+        bindsym $down resize shrink height 2 px or 2 ppt
+        bindsym $right resize grow width 2 px or 2 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Up resize grow height 10 px or 10 ppt
-        bindsym Down resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 2 px or 2 ppt
+        bindsym Up resize grow height 2 px or 2 ppt
+        bindsym Down resize shrink height 2 px or 2 ppt
+        bindsym Right resize grow width 2 px or 2 ppt
+
+        # rebalance things - https://github.com/atreyasha/i3-balance-workspace
+        bindsym b exec "/home/marco/.local/bin/i3_balance_workspace"
 
         # resize gaps
         bindsym minus       gaps inner all minus 5
