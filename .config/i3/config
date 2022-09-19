@@ -16,11 +16,11 @@ gaps outer 0
 smart_gaps inverse_outer
 
 # Borders
-for_window [class="^.*"] border pixel 5
-hide_edge_borders both
+for_window [class="^.*"] border pixel 2
+# hide_edge_borders both
 # class                 border  backgr. text    indicator child_border
-client.focused          #ab9df2 #4A4A4A #ffffff #2e9ef4   #4A4A4A
-# client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A   #4A4A4A
+client.focused          #222222 #4A4A4A #ffffff #ab9df2   #ab9df2
+# client.focused          #4A4A4A #4A4A4A #e5e5e5 #2e9ef4   #4A4A4A
 client.unfocused        #222222 #222222 #aaaaaa #222222   #222222
 client.focused_inactive #222222 #222222 #a9a9a9 #222222   #222222
 
