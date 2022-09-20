@@ -33,7 +33,7 @@ exec_always autorandr -c
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/hatsune-miku-1.jpg
 
 # compton for transparency
-exec_always --no-startup-id compton
+exec_always --no-startup-id picom
 
 # polybar
 exec_always --no-startup-id /home/marco/.config/polybar/launch
