@@ -251,3 +251,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Application-specific settings
+for_window [class="Bitwarden"] floating enable
