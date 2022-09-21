@@ -192,9 +192,9 @@ bindsym $mod+l exec "/home/marco/bin/power-menu.sh"
 bindsym $mod+Shift+l exec "/home/marco/bin/i3lock-script.sh"
 
 # volume - pulseaudio
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
-bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # brightness
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
