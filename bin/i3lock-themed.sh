@@ -18,6 +18,7 @@ i3lock \
   --time-color=fcfcfaff \
   --date-str="%a %d %b %Y" \
   --date-color=fcfcfaff \
-  --wrong-text="incorrect" \
+  --verif-text="" \
+  --wrong-text="" \
   --lockfailed-text="lock failed" \
   -e
