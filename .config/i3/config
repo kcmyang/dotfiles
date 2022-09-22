@@ -192,9 +192,13 @@ bindsym $mod+l exec "/home/marco/bin/power-menu.sh"
 bindsym $mod+Shift+l exec "/home/marco/bin/i3lock-script.sh"
 
 # volume - pulseaudio
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+# bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+# bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+# bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+# see https://github.com/graysky2/pulseaudio-ctl
+bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
+bindsym XF86AudioMute exec pulseaudio-ctl mute
 
 # media playback
 bindsym XF86AudioPlay exec playerctl play-pause
