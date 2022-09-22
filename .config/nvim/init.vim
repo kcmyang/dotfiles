@@ -111,3 +111,7 @@ autocmd WinLeave * setlocal nocursorline
 " Split below and right
 set splitbelow
 set splitright
+
+" Case insensitive search
+set ignorecase
+set smartcase
