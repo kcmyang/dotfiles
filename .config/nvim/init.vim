@@ -2,7 +2,7 @@ filetype on
 set tabstop=2
 set shiftwidth=0
 set expandtab
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 " Makefile settings
 autocmd Filetype make setlocal noexpandtab
@@ -67,8 +67,8 @@ autocmd FileAppendPre * call TrimWhiteSpace()
 autocmd FilterWritePre * call TrimWhiteSpace()
 autocmd BufWritePre * call TrimWhiteSpace()
 
-map <Leader>d :call TrimWhiteSpace()<CR>
-map! <Leader>d :call TrimWhiteSpace()<CR>
+nnoremap <Leader>d :call TrimWhiteSpace()<CR>
+" nnoremap! <Leader>d :call TrimWhiteSpace()<CR>
 
 " Colorscheme
 set termguicolors
