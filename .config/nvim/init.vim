@@ -25,6 +25,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 Plug 'phanviet/vim-monokai-pro'
 " Plug 'patstockwell/vim-monokai-tasty'
