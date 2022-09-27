@@ -39,8 +39,8 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id /home/marco/.config/polybar/launch
 
 # notifications
-exec killall -q gdm
-exec --no-startup-id dunst
+# exec killall -q gdm
+# exec_always --no-startup-id dunst
 
 # End startup stuff
 
@@ -212,9 +212,6 @@ bindsym XF86AudioForward exec playerctl next
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
-# dunst
-bindsym $mod+Shift+b exec killall dunst;exec notify-send "Restarted dunst" ":)"
-
 # screenshot
 mode "screenshot" {
         bindsym g exec flameshot gui; mode "default"
@@ -227,6 +224,12 @@ mode "screenshot" {
 }
 
 bindsym $mod+z mode "screenshot"
+
+# notifications - dunst
+bindsym $mod+Shift+b exec killall dunst; exec dunstify -u low -t 3000 "Restarted dunst" "(*・ω・)ﾉ"; exec dunstify -u normal -t 4000 "Restarted dunst" "(*・ω・)ﾉ"; exec dunstify -u critical -t 5000 "Restarted dunst" "(*・ω・)ﾉ"
+bindsym $mod+apostrophe exec dunstctl close
+bindsym $mod+Shift+apostrophe exec dunstctl close-all
+bindsym $mod+grave exec dunstctl action
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
