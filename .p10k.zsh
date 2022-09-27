@@ -279,7 +279,7 @@
 
   # The default icon shown next to non-writable directories when POWERLEVEL9K_DIR_SHOW_WRITABLE is
   # set to v2.
-  typeset -g POWERLEVEL9K_LOCK_ICON='∅'
+  typeset -g POWERLEVEL9K_LOCK_ICON='🔒'
 
   # POWERLEVEL9K_DIR_CLASSES allows you to specify custom icons and colors for different
   # directories. It must be an array with 3 * N elements. Each triplet consists of:
