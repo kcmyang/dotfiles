@@ -24,6 +24,9 @@ client.focused          #222222 #4A4A4A #ffffff #ab9df2   #ab9df2
 client.unfocused        #222222 #222222 #aaaaaa #222222   #222222
 client.focused_inactive #222222 #222222 #a9a9a9 #222222   #222222
 
+# Focus window when activated
+focus_on_window_activation focus
+
 # Startup stuff
 
 # autorandr
@@ -137,11 +140,11 @@ set $ws9 "9"
 set $ws10 "10"
 
 # Multi-monitor setup: split workspaces across monitors
-workspace $ws1 output DP-2 e-DP1
-workspace $ws2 output DP-2 e-DP1
-workspace $ws3 output DP-2 e-DP1
-workspace $ws4 output DP-2 e-DP1
-workspace $ws5 output DP-2 e-DP1
+workspace $ws1 output DP-1 DP-2 e-DP1
+workspace $ws2 output DP-1 DP-2 e-DP1
+workspace $ws3 output DP-1 DP-2 e-DP1
+workspace $ws4 output DP-1 DP-2 e-DP1
+workspace $ws5 output DP-1 DP-2 e-DP1
 workspace $ws6 output primary
 workspace $ws7 output primary
 workspace $ws8 output primary
