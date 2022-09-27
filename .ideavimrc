@@ -1,5 +1,6 @@
 " Base settings
 set scrolloff=5
+set ignorecase
 set smartcase
 set hlsearch
 set clipboard+=unnamed
@@ -23,3 +24,5 @@ set surround
 set easymotion
 set notimeout
 let g:EasyMotion_keys = "yeoipfjk,thsardcwgbvqz'nlu"
+
+set commentary
