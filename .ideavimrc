@@ -14,6 +14,7 @@ nnoremap Y y$
 
 " Plugins
 set sneak
+set quickscope
 
 set highlightedyank
 let g:highlightedyank_highlight_duration = 200
