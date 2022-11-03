@@ -20,9 +20,9 @@ for_window [class="^.*"] border pixel 2
 # hide_edge_borders both
 # class                 border  backgr. text    indicator child_border
 client.focused          #222222 #4A4A4A #ffffff #ab9df2   #ab9df2
-# client.focused          #4A4A4A #4A4A4A #e5e5e5 #2e9ef4   #4A4A4A
-client.unfocused        #222222 #222222 #aaaaaa #222222   #222222
 client.focused_inactive #222222 #222222 #a9a9a9 #222222   #222222
+client.unfocused        #222222 #222222 #aaaaaa #222222   #222222
+client.urgent           #222222 #4A4A4A #ffffff #ff6188   #ff6188
 
 # Focus window when activated
 focus_on_window_activation focus
