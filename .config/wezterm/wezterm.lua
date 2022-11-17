@@ -2,6 +2,10 @@ local wezterm = require 'wezterm'
 return {
   -- colors
   color_scheme = 'MonokaiPro (Gogh)',
+  colors = {
+    cursor_bg = '#fcfcfa',
+    cursor_fg = '#222222',
+  },
   -- font
   font = wezterm.font 'Iosevka Custom',
   font_size = 14.0,
