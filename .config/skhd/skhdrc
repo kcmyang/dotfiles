@@ -4,7 +4,7 @@
 ctrl + alt + cmd - r : skhd --reload
 
 # Hot reload yabai
-shift + ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+shift + ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/com.koekeishiya.yabai"
 
 # Open a terminal
 shift + cmd - return : open -a iTerm ~
