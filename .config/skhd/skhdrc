@@ -15,8 +15,8 @@ shift + alt + cmd - return : open ~
 ## yabai
 
 # Modes
-:: default  : yabai -m config window_border off
-:: resize @ : yabai -m config window_border on
+:: default  : borders active_color=0xffab9df2
+:: resize @ : borders active_color=0xffff6188
 
 # Focus window
 alt - u : yabai -m window --focus north
