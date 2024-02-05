@@ -15,7 +15,7 @@ shift + alt + cmd - return : open ~
 ## yabai
 
 # Modes
-:: default  : borders active_color=0xffab9df2
+:: default  : borders active_color=0xff63789E
 :: resize @ : borders active_color=0xffff6188
 
 # Focus window
