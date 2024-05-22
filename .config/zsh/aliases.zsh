@@ -6,7 +6,6 @@
 # Directories
 alias uw="cd ~/Documents/uw"
 alias repo="cd ~/repo"
-alias uberwidgets="cd ~/Library/Application\ Support/Übersicht/widgets"
 
 # Files
 alias zshrc="nvim ~/.zshrc"
@@ -27,4 +26,8 @@ alias gupom='git pull --rebase origin $(git_main_branch)'
 alias gcoi='git checkout-interactive'
 gnew () {
   git checkout -b "${1}" && git push -u origin $(current_branch)
+}
+# https://github.com/ohmyzsh/ohmyzsh/pull/9412#issuecomment-1310437963
+git_main_branch() {
+  echo $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
 }
