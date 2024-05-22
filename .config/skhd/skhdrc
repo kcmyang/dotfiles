@@ -7,7 +7,7 @@ ctrl + alt + cmd - r : skhd --reload
 shift + ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/com.koekeishiya.yabai"
 
 # Open a terminal
-shift + cmd - return : open -a iTerm ~
+shift + cmd - return : open -n -a iTerm ~
 
 # Open a Finder window
 shift + alt + cmd - return : open ~
