@@ -62,7 +62,7 @@ function TrimWhiteSpace()
   ''
 endfunction
 
-set list listchars=trail:·,extends:>
+set list listchars=tab:␉·,trail:·,extends:>
 autocmd FileWritePre * call TrimWhiteSpace()
 autocmd FileAppendPre * call TrimWhiteSpace()
 autocmd FilterWritePre * call TrimWhiteSpace()
