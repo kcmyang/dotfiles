@@ -15,8 +15,8 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 # Programs
 alias vim="nvim"
 alias vi="vim"
-alias r="source ranger"
-alias rr="ranger"
+alias r="ranger"
+alias rr="source ranger"
 alias code="open -a Visual\ Studio\ Code"
 
 # git
