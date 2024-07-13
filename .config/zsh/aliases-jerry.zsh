@@ -31,3 +31,8 @@ gnew () {
 git_main_branch() {
   echo $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
 }
+# https://stackoverflow.com/a/33548037
+alias gbdr='git_delete_branches_deleted_on_remote'
+git_delete_branches_deleted_on_remote() {
+  git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done
+}
