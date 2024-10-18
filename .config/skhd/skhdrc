@@ -7,7 +7,7 @@ ctrl + alt + cmd - r : skhd --reload
 shift + ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/com.koekeishiya.yabai"
 
 # Open a terminal
-shift + cmd - return : open -n -a iTerm ~
+shift + cmd - return : open -n -a WezTerm ~
 
 # Open a Finder window
 shift + alt + cmd - return : open ~
@@ -127,6 +127,9 @@ shift + alt - f : yabai -m window --toggle float
 
 # Toggle sticky
 shift + alt - j : yabai -m window --toggle sticky
+
+# Toggle fullscreen
+shift + alt - k : yabai -m window --toggle windowed-fullscreen
 
 # Toggle gaps/padding
 shift + alt - g : yabai -m space --toggle gap;    \
