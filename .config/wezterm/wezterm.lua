@@ -1,5 +1,7 @@
 local wezterm = require 'wezterm'
 return {
+  -- $TERM
+  term = 'wezterm',
   -- colors
   color_scheme = 'MonokaiPro (Gogh)',
   colors = {
@@ -22,6 +24,13 @@ return {
   },
   -- opacity
   window_background_opacity = 0.9,
+  -- bells
+  visual_bell = {
+    fade_in_duration_ms = 75,
+    fade_out_duration_ms = 75,
+    target = 'CursorColor',
+  },
+  audible_bell = 'Disabled',
   -- mouse bindings
   mouse_bindings = {
     {
@@ -38,6 +47,24 @@ return {
       event = { Up = { streak = 3, button = 'Left' }},
       mods = 'NONE',
       action = wezterm.action { CompleteSelection = 'ClipboardAndPrimarySelection' },
+    },
+  },
+  -- key bindings
+  keys = {
+    {
+      key = 'LeftArrow',
+      mods = 'CMD',
+      action = wezterm.action.SendKey { key = 'Home' },
+    },
+    {
+      key = 'RightArrow',
+      mods = 'CMD',
+      action = wezterm.action.SendKey { key = 'End' },
+    },
+    {
+      key = 'L',
+      mods = 'CMD|CTRL|SHIFT',
+      action = wezterm.action.ShowLauncher,
     },
   },
 }
