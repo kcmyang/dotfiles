@@ -66,6 +66,8 @@ yabai -m rule --add app="^Cisco AnyConnect Secure Mobility Client$" manage=off
 yabai -m rule --add app="^IINA$" manage=off
 yabai -m rule --add app="^PokerStarsCAON$" manage=off
 yabai -m rule --add app="^Google Chrome for Testing$" manage=off
+yabai -m rule --add app="^Inkscape$" manage=off
+yabai -m rule --add app="^Proton Pass$" manage=off
 
 ## Signals
 
